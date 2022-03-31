@@ -51,6 +51,7 @@ namespace MagazinZaDrehi.Controllers
         public IActionResult Create()
         {
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
+            ViewData["ArticulId"] = new SelectList(_context.Articul, "Id", "Id");
             return View();
         }
 
@@ -68,6 +69,7 @@ namespace MagazinZaDrehi.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", order.UserId);
+            ViewData["ArticulId"] = new SelectList(_context.Articul, "Id", "Id", order.ArticulId);
             return View(order);
         }
 
