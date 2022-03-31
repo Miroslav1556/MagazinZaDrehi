@@ -7,6 +7,6 @@ namespace MagazinZaDrehi.Data
     {
         public string  Name { get; set; }
         public string Familily { get; set; }
-        public ICollection<Orders> Orders { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
 }

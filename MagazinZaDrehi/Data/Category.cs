@@ -6,7 +6,7 @@ namespace MagazinZaDrehi.Data
     {
         public int Id { get; set; }    
         public string Categories { get; set; }
-        public ICollection<Articuls> Articuls { get; set; }
+        public ICollection<Articul> Articuls { get; set; }
 
     }
 }

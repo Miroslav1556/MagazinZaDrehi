@@ -3,15 +3,16 @@ using System.Collections.Generic;
 
 namespace MagazinZaDrehi.Data
 {
-    public class Orders
+    public class Order
     {
         public int Id { get; set; }
-        public string ClienId   { get; set; }
+        public string UserId   { get; set; }
+        public User User { get; set; }
         public string ArticulId     { get; set; }
-        public ICollection<Articuls> Articuls { get; set; }
+        public Articul Articul { get; set; }
         public string Quantity  { get; set; }
         public DateTime OrderOn { get; set; }     
-        public User User { get; set; }
+
        
     }
 }

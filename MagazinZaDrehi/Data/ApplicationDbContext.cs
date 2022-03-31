@@ -12,9 +12,9 @@ namespace MagazinZaDrehi.Data
             : base(options)
         {
         }  
-        public DbSet<Articuls> Articuls { get; set; }
+        public DbSet<Articul> Articul { get; set; }
         public DbSet<Category> Category { get; set; }
-        public DbSet<Orders> Orders { get; set; }
+        public DbSet<Order> Order { get; set; }
 
     }
 }
